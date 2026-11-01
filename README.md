@@ -36,6 +36,8 @@ Needs Claude Code, `git`, Python 3, and Node (only for `render_fetch.js`).
 Skills then show up as `founder-skills:founder-cfo` and so on. Type
 `/founder-skills:founder-board` or just ask ("test my business idea").
 
+New here? Read [GETTING-STARTED.md](GETTING-STARTED.md): install, then one prompt to start.
+
 ## Automatic updates (recommended)
 
 A new version is published once a month. To receive it without doing anything,

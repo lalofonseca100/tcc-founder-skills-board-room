@@ -1,0 +1,740 @@
+{
+ "_about": "Dated tax parameters for the Netherlands (NL) and Mexico (MX). Every value has a source id (see sources.md) and a status: law (in force), proposal (announced, not adopted), approved_lower (approved by one chamber only), unverified (secondary source only or sources conflict). Edit only through the monthly review with the founder's approval; log each change in CHANGELOG.md.",
+ "_last_reviewed": "2026-11-01",
+ "NL": {
+  "2026": {
+   "status": "law",
+   "currency": "EUR",
+   "box1_below_aow": {
+    "brackets": [
+     [
+      38883,
+      0.3575
+     ],
+     [
+      78426,
+      0.3756
+     ],
+     [
+      null,
+      0.495
+     ]
+    ],
+    "src": "BD-VA-2026"
+   },
+   "zelfstandigenaftrek": {
+    "value": 1200,
+    "src": "KVK-2026"
+   },
+   "startersaftrek": {
+    "value": 2123,
+    "src": "NEWTONE-BP27",
+    "note": "max 3 times in first 5 years, needs urencriterium"
+   },
+   "urencriterium_hours": {
+    "value": 1225,
+    "src": "KVK-2026"
+   },
+   "mkb_winstvrijstelling": {
+    "value": 0.127,
+    "src": "KVK-2026"
+   },
+   "algemene_heffingskorting": {
+    "table": [
+     [
+      0,
+      3115,
+      0
+     ],
+     [
+      29736,
+      3115,
+      -0.06398
+     ],
+     [
+      78426,
+      0,
+      0
+     ]
+    ],
+    "max": 3115,
+    "src": "BD-VA-2026"
+   },
+   "arbeidskorting": {
+    "table": [
+     [
+      0,
+      0,
+      0.08324
+     ],
+     [
+      11965,
+      996,
+      0.31009
+     ],
+     [
+      25845,
+      5300,
+      0.0195
+     ],
+     [
+      45592,
+      5685,
+      -0.0651
+     ],
+     [
+      132920,
+      0,
+      0
+     ]
+    ],
+    "max": 5685,
+    "src": "BD-VA-2026",
+    "note": "rows: [from, amount at from, rate on excess]"
+   },
+   "zvw_ondernemer": {
+    "rate": 0.0485,
+    "max_income": 79409,
+    "src": "KVK-2026"
+   },
+   "zvw_employer": {
+    "rate": 0.061,
+    "max_income": 79409,
+    "src": "KVK-2026"
+   },
+   "kor_threshold": {
+    "value": 20000,
+    "src": "KVK-2026"
+   },
+   "btw": {
+    "standard": 0.21,
+    "reduced": 0.09,
+    "src": "KVK-2026",
+    "note": "short-stay accommodation moved 9% to 21% on 1 Jan 2026"
+   },
+   "vpb": {
+    "brackets": [
+     [
+      200000,
+      0.19
+     ],
+     [
+      null,
+      0.258
+     ]
+    ],
+    "src": "KVK-2026"
+   },
+   "box2": {
+    "brackets": [
+     [
+      68843,
+      0.245
+     ],
+     [
+      null,
+      0.31
+     ]
+    ],
+    "partners_threshold": 137686,
+    "src": "KVK-2026"
+   },
+   "dividendbelasting": {
+    "value": 0.15,
+    "src": "KVK-2026"
+   },
+   "gebruikelijk_loon_dga": {
+    "value": 58000,
+    "src": "KVK-2026"
+   },
+   "box3": {
+    "heffingsvrij": 59357,
+    "rate": 0.36,
+    "forfait_bank": 0.0128,
+    "forfait_other": 0.06,
+    "forfait_debt": 0.027,
+    "src": "BD-VA-2026"
+   },
+   "expat_30": {
+    "pct": 0.3,
+    "salary_norm": 48013,
+    "salary_norm_u30_master": 36497,
+    "wnt_cap": 262000,
+    "src": "SRA-EXPAT-2026-10",
+    "status": "unverified"
+   },
+   "ouderenkorting": {
+    "note": "not modelled; only above AOW age",
+    "src": "BD-VA-2026"
+   }
+  },
+  "2027": {
+   "status": "proposal",
+   "_note": "Belastingplan 2027 (Prinsjesdag 15 Sep 2026). Tweede Kamer and Eerste Kamer still have to vote (Eerste Kamer expected December 2026). Values missing here are copied from 2026 by the tool, with a warning.",
+   "box1_below_aow": {
+    "brackets": [
+     [
+      39247,
+      0.3623
+     ],
+     [
+      78426,
+      0.3816
+     ],
+     [
+      null,
+      0.495
+     ]
+    ],
+    "src": "TAXMATE-BP27"
+   },
+   "zelfstandigenaftrek": {
+    "value": 900,
+    "src": "NEWTONE-BP27"
+   },
+   "startersaftrek": {
+    "value": 10,
+    "src": "NEWTONE-BP27",
+    "note": "abolished from 1 Jan 2028"
+   },
+   "algemene_heffingskorting": {
+    "max": 3154,
+    "src": "TAXMATE-BP27",
+    "note": "same: 2026 table used, warns"
+   },
+   "arbeidskorting": {
+    "max": 5929,
+    "src": "TAXMATE-BP27",
+    "note": "band limits not published in our sources: the tool uses the 2026 table and warns"
+   },
+   "zvw_ondernemer": {
+    "rate": 0.0502,
+    "src": "TAXMATE-BP27",
+    "status": "unverified"
+   },
+   "box2": {
+    "brackets": [
+     [
+      69607,
+      0.245
+     ],
+     [
+      null,
+      0.31
+     ]
+    ],
+    "src": "TAXMATE-BP27"
+   },
+   "expat_30": {
+    "pct": 0.27,
+    "wnt_cap": 273000,
+    "salary_norm": "not yet published",
+    "src": "SRA-EXPAT-2026-10"
+   }
+  }
+ },
+ "MX": {
+  "2026": {
+   "status": "law",
+   "currency": "MXN",
+   "isr_pf_annual_art152": {
+    "src": "SDV-ISR-2026",
+    "status": "unverified",
+    "note": "check against Anexo 8 RMF 2026 (DOF 28 Dec 2025)",
+    "rows": [
+     [
+      0.01,
+      0.0,
+      0.0192
+     ],
+     [
+      10135.12,
+      194.59,
+      0.064
+     ],
+     [
+      86022.12,
+      5051.37,
+      0.1088
+     ],
+     [
+      151176.2,
+      12140.13,
+      0.16
+     ],
+     [
+      175735.67,
+      16069.64,
+      0.1792
+     ],
+     [
+      210403.7,
+      22282.14,
+      0.2136
+     ],
+     [
+      424353.98,
+      67981.92,
+      0.2352
+     ],
+     [
+      668840.15,
+      125485.07,
+      0.3
+     ],
+     [
+      1276925.99,
+      307910.81,
+      0.32
+     ],
+     [
+      1702567.98,
+      444116.23,
+      0.34
+     ],
+     [
+      5107703.93,
+      1601862.46,
+      0.35
+     ]
+    ]
+   },
+   "resico_pf": {
+    "tiers": [
+     [
+      300000,
+      0.01
+     ],
+     [
+      600000,
+      0.011
+     ],
+     [
+      1000000,
+      0.015
+     ],
+     [
+      2500000,
+      0.02
+     ],
+     [
+      3500000,
+      0.025
+     ]
+    ],
+    "cap": 3500000,
+    "applies": "one rate on all income collected in the year (not progressive)",
+    "src": "SATFACIL-RESICO-2026"
+   },
+   "resico_pf_retention_by_pm_clients": {
+    "value": 0.0125,
+    "src": "LISR-113J",
+    "status": "unverified"
+   },
+   "resico_pm_cap": {
+    "value": 35000000,
+    "src": "HERU-PE27"
+   },
+   "isr_pm": {
+    "value": 0.3,
+    "src": "LISR-9",
+    "status": "unverified"
+   },
+   "dividend_additional_pf_or_foreign": {
+    "value": 0.1,
+    "src": "LISR-140",
+    "status": "unverified"
+   },
+   "iva": {
+    "standard": 0.16,
+    "border": 0.08,
+    "src": "LIVA-1",
+    "status": "unverified",
+    "note": "border 8% is a decree-based incentive with registration"
+   },
+   "uma_daily": {
+    "value": 117.31,
+    "src": "SDV-ISR-2026",
+    "status": "unverified",
+    "note": "sources show 117.22 and 117.31; confirm on INEGI"
+   }
+  },
+  "2027": {
+   "status": "approved_lower",
+   "_note": "Paquete Económico 2027: sent 8 Sep 2026; approved by Cámara de Diputados 15 Oct 2026 (LISR 322-115). Senate and DOF publication not confirmed as of 1 Nov 2026.",
+   "resico_pf": {
+    "tiers": [
+     [
+      300000,
+      0.01
+     ],
+     [
+      600000,
+      0.011
+     ],
+     [
+      1000000,
+      0.015
+     ],
+     [
+      2500000,
+      0.02
+     ],
+     [
+      5000000,
+      0.025
+     ]
+    ],
+    "cap": 5000000,
+    "src": "HERU-PE27"
+   },
+   "resico_pm_cap": {
+    "value": 50000000,
+    "src": "HERU-PE27",
+    "note": "PM owned only by individuals may opt in"
+   },
+   "resico_iva_7": {
+    "value": 0.07,
+    "src": "HERU-PE27",
+    "note": "optional: pay 7% of IVA-taxed collections, no IVA credit on costs/imports, client still charged 16%, irrevocable for the year, notify SAT within 30 days of first collection"
+   },
+   "isr_retention_interest": {
+    "value": 0.0068,
+    "src": "HERU-PE27"
+   }
+  }
+ },
+ "NL_MX_treaty": {
+  "status": "law",
+  "signed": "1993-09-27",
+  "src": "TRB-1993-160",
+  "tie_breaker_individuals": "permanent home > centre of vital interests > habitual abode > nationality > mutual agreement (art. 4(2))",
+  "pe_construction_months": 6,
+  "service_pe": "none in art. 5 text",
+  "independent_services": "taxable in the other state only with a fixed base there or 183+ days in any 12 months (art. 14)",
+  "artists_sportsmen": "may be taxed where they perform, also when paid to another person (art. 17)",
+  "dividends": {
+   "rate_10pct_holding_company": 0.05,
+   "other": 0.15,
+   "status": "verified for 5%"
+  },
+  "interest": {
+   "status": "unverified",
+   "note": "treaty text read as 15%; SDV says 10%/5% (banks). Protocol of 2008 and any most-favoured-nation clause must be checked"
+  },
+  "royalties": {
+   "status": "unverified",
+   "note": "treaty text read as 15%; SDV says 10%. Same check"
+  },
+  "relief": "NL: exemption with progression for listed items, credit for others; MX: credit up to Mexican tax"
+ },
+ "ES": {
+  "2026": {
+   "status": "law",
+   "currency": "EUR",
+   "irpf_state": {
+    "brackets": [
+     [
+      12450,
+      0.095
+     ],
+     [
+      20200,
+      0.12
+     ],
+     [
+      35200,
+      0.15
+     ],
+     [
+      60000,
+      0.185
+     ],
+     [
+      300000,
+      0.225
+     ],
+     [
+      null,
+      0.245
+     ]
+    ],
+    "src": "GUIAFISCAL-IRPF-2026"
+   },
+   "irpf_baleares": {
+    "brackets": [
+     [
+      10000,
+      0.09
+     ],
+     [
+      18000,
+      0.1125
+     ],
+     [
+      30000,
+      0.1425
+     ],
+     [
+      48000,
+      0.175
+     ],
+     [
+      70000,
+      0.19
+     ],
+     [
+      90000,
+      0.2175
+     ],
+     [
+      120000,
+      0.2275
+     ],
+     [
+      175000,
+      0.2375
+     ],
+     [
+      null,
+      0.2475
+     ]
+    ],
+    "src": "TAXDOWN-BAL-2026",
+    "status": "unverified",
+    "note": "page applies it to 2025 and says no newer version exists; confirm 2026 on AEAT manual"
+   },
+   "minimo_personal": {
+    "state": 5550,
+    "baleares": 5550,
+    "src": "GUIAFISCAL-IRPF-2026",
+    "status": "unverified",
+    "note": "Baleares figure conflicts (5,550 vs 6,105); 5,550 used"
+   },
+   "irpf_ahorro": {
+    "brackets": [
+     [
+      6000,
+      0.19
+     ],
+     [
+      50000,
+      0.21
+     ],
+     [
+      200000,
+      0.23
+     ],
+     [
+      300000,
+      0.27
+     ],
+     [
+      null,
+      0.3
+     ]
+    ],
+    "src": "GUIAFISCAL-IRPF-2026"
+   },
+   "gastos_dificil_justificacion": {
+    "rate": 0.05,
+    "cap": 2000,
+    "src": "LIRPF-RIRPF-30",
+    "status": "unverified",
+    "note": "estimación directa simplificada"
+   },
+   "reta": {
+    "gastos_genericos": 0.07,
+    "rate_total": 0.315,
+    "rate_parts": "28.30 cc + 1.30 prof + 0.90 cese + 0.10 FP + 0.90 MEI",
+    "tarifa_plana_month": 80,
+    "tarifa_plana_months": 12,
+    "tramos": [
+     [
+      670,
+      653.59
+     ],
+     [
+      900,
+      718.95
+     ],
+     [
+      1166.7,
+      849.67
+     ],
+     [
+      1300,
+      950.98
+     ],
+     [
+      1500,
+      960.78
+     ],
+     [
+      1700,
+      960.78
+     ],
+     [
+      1850,
+      1143.79
+     ],
+     [
+      2030,
+      1209.15
+     ],
+     [
+      2330,
+      1274.51
+     ],
+     [
+      2760,
+      1356.21
+     ],
+     [
+      3190,
+      1437.91
+     ],
+     [
+      3620,
+      1519.61
+     ],
+     [
+      4050,
+      1601.31
+     ],
+     [
+      6000,
+      1732.03
+     ],
+     [
+      null,
+      1928.1
+     ]
+    ],
+    "src": "SEGSOCIAL-RETA-2026",
+    "note": "tramos: [monthly net income up to, base mínima]; 7% gastos genéricos unverified"
+   },
+   "iva": {
+    "standard": 0.21,
+    "reduced": 0.1,
+    "super_reduced": 0.04,
+    "src": "LIVA-ES-90",
+    "status": "unverified"
+   },
+   "is_micro": {
+    "brackets": [
+     [
+      50000,
+      0.19
+     ],
+     [
+      null,
+      0.21
+     ]
+    ],
+    "src": "INTERFORO-IS-2026",
+    "status": "unverified",
+    "note": "BBVA says 21%/22% (that is the 2025 scale); confirm in BOE"
+   },
+   "is_nueva_creacion": {
+    "value": 0.15,
+    "src": "INTERFORO-IS-2026",
+    "note": "first year with profit and the next"
+   },
+   "is_startup": {
+    "value": 0.15,
+    "src": "BBVA-EMPRENDE-2026",
+    "note": "Ley 28/2022: first 4 years with profit, needs ENISA certification"
+   },
+   "nonresident_artist_withholding": {
+    "note": "IRNR 24% (19% EU/EEA residents) on gross: unverified",
+    "status": "unverified",
+    "src": "LIRNR-25"
+   }
+  },
+  "2027": {
+   "status": "law",
+   "_note": "only IS micro scale change known (Interforo): 17% / 20%",
+   "is_micro": {
+    "brackets": [
+     [
+      50000,
+      0.17
+     ],
+     [
+      null,
+      0.2
+     ]
+    ],
+    "src": "INTERFORO-IS-2026",
+    "status": "unverified"
+   }
+  }
+ },
+ "AE": {
+  "2026": {
+   "status": "law",
+   "currency": "AED",
+   "ct": {
+    "brackets": [
+     [
+      375000,
+      0.0
+     ],
+     [
+      null,
+      0.09
+     ]
+    ],
+    "src": "PWC-AE-2026"
+   },
+   "small_business_relief": {
+    "revenue_cap": 3000000,
+    "src": "FTA-SBR",
+    "status": "unverified",
+    "note": "elect each period; revenue <= AED 3M in current and all prior periods; end date after 31 Dec 2026 NOT confirmed"
+   },
+   "natural_person_threshold": {
+    "value": 1000000,
+    "src": "FTA-CT-NP",
+    "status": "unverified",
+    "note": "natural persons are in CT scope only when business turnover > AED 1M: not yet read from FTA"
+   },
+   "free_zone_qualifying": {
+    "value": 0.0,
+    "non_qualifying": 0.09,
+    "src": "PWC-AE-2026",
+    "note": "de minimis and substance conditions not loaded"
+   },
+   "pit": {
+    "value": 0.0,
+    "src": "PWC-AE-2026"
+   },
+   "vat": {
+    "standard": 0.05,
+    "src": "PWC-AE-2026"
+   },
+   "residence_individual": "183 days in 12 months, or 90 days + UAE/GCC national or residence permit + home or business in UAE, or centre of interests (Cabinet Decision 85/2022)"
+  }
+ },
+ "treaties_other": {
+  "_src": "PWC-AE-WHT-2026 (rates only, conditions not loaded)",
+  "NL_AE": {
+   "dividends": "0/5/10",
+   "interest": 0,
+   "royalties": 0
+  },
+  "MX_AE": {
+   "dividends": 0,
+   "interest": "0/4.9/10",
+   "royalties": 0.1
+  },
+  "ES_AE": {
+   "dividends": "0/5/15",
+   "interest": 0,
+   "royalties": 0
+  },
+  "NL_ES": "not loaded yet",
+  "MX_ES": "not loaded yet"
+ }
+}

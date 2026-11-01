@@ -1,0 +1,8 @@
+{
+  "name": "founder-skills",
+  "version": "1.0.0",
+  "description": "17 founder skills: board, competitors, market, consumer panel, pricing, offer, brand, marketing, sales, ops, launch, CFO, tax, CTO, plan, learning and skill audit. Tools included.",
+  "author": { "name": "lalofonseca100" },
+  "license": "MIT",
+  "keywords": ["founder", "business plan", "cfo", "tax", "cto", "ai", "research"]
+}

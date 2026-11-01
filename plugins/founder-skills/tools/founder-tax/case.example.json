@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"name": "NL eenmanszaak 2026", "country": "NL", "year": 2026, "regime": "eenmanszaak", "profit": 45000, "turnover": 70000, "urencriterium": true, "starter": true},
+    {"name": "Same profit, 2027 proposal", "country": "NL", "year": 2027, "regime": "eenmanszaak", "profit": 45000, "turnover": 70000, "urencriterium": true, "starter": true},
+    {"name": "Same profit in a BV", "country": "NL", "year": 2026, "regime": "bv", "profit": 45000, "distribute": true},
+    {"name": "MX RESICO 900k", "country": "MX", "year": 2026, "regime": "resico_pf", "income": 900000, "costs": 300000},
+    {"name": "MX RESICO 900k, 2027 reform", "country": "MX", "year": 2027, "regime": "resico_pf", "income": 900000, "costs": 300000},
+    {"name": "MX actividad empresarial 900k", "country": "MX", "year": 2026, "regime": "pf_empresarial", "income": 900000, "deductions": 300000}
+  ]
+}

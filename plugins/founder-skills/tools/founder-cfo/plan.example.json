@@ -1,0 +1,40 @@
+{
+  "business": "Example art booking agency (illustrative numbers)",
+  "currency": "EUR",
+  "start_year": 2027,
+  "years": 4,
+  "opening_cash": 0,
+  "vat_rate": 0.21,
+  "target_year": 2027,
+  "founder_hours": 1150,
+  "cases": {"low": 0.6, "high": 1.3},
+  "products": [
+    {"name": "Medium festival, 1 work", "price": 5880, "variable": 4450, "units": [4, 7, 10, 12],
+     "season": [0,0,0,0,0,1,1,1,1,0,0,0], "deposit": 0.5, "deposit_months_before": 3, "pay_months_after": 1,
+     "source": "v2 price chapter: artist fee + job costs + 20% service fee"},
+    {"name": "Curated experience, 3 works", "price": 18414, "variable": 12495, "units": [2, 2, 3, 4],
+     "season": [0,0,0,0,0,1,1,1,1,0,0,0], "deposit": 0.5, "deposit_months_before": 3, "pay_months_after": 1,
+     "source": "v2 price chapter"},
+    {"name": "Brand event via an agency, 1 work", "price": 10010, "variable": 7720, "units": [2, 4, 6, 8],
+     "season": [0,0,1,1,1,1,1,1,1,1,1,0], "deposit": 0.5, "deposit_months_before": 2, "pay_months_after": 1,
+     "source": "v2 price chapter: 30% fee, 10% to the agency"},
+    {"name": "Long-term placement, 1 year", "price": 12000, "variable": 7200, "units": [0, 1, 2, 3],
+     "source": "v2 price chapter: 2.5% of value a month, 60/40 split"},
+    {"name": "First-gig fee from a new artist", "price": 300, "variable": 0, "units": [12, 10, 10, 10],
+     "season": [0,0,0,0,0,1,1,1,1,0,0,0], "pay_months_after": 1, "source": "Founders' decision, 26 Oct 2026"}
+  ],
+  "costs": [
+    {"name": "Business insurance", "per_year": [1500, 1500, 1500, 1500], "upfront": true, "source": "Estimate; broker quote needed"},
+    {"name": "Software and AI tools", "per_year": [1800, 1800, 1800, 1800], "source": "EUR 100-200 a month"},
+    {"name": "Bookkeeping", "per_year": [1000, 1000, 1000, 1000], "source": "Estimate, Qonto range EUR 600-2,500"},
+    {"name": "Hosting and domain", "per_year": [300, 300, 300, 300], "source": "Estimate"},
+    {"name": "Software partner", "per_year": [3000, 3000, 3000, 3000], "source": "Placeholder"},
+    {"name": "Marketing and events", "per_year": [2000, 4000, 5000, 6000], "source": "Owner estimate"},
+    {"name": "Travel and phone", "per_year": [1500, 2000, 2500, 3000], "source": "Estimate"},
+    {"name": "Admin for jobs abroad", "per_year": [0, 500, 500, 500], "source": "Belgium from 2028"},
+    {"name": "Project manager (freelance)", "per_year": [0, 0, 12000, 24000], "source": "v2 team chapter"}
+  ],
+  "one_off": [
+    {"name": "Accountant advice session", "amount": 300, "year": 2027, "month": 1, "source": "Estimate"}
+  ]
+}

@@ -1,0 +1,7 @@
+{"cases": [
+ {"name": "ES autónomo Ibiza 45k", "country": "ES", "year": 2026, "regime": "autonomo", "income": 60000, "expenses": 15000},
+ {"name": "ES autónomo nuevo (tarifa plana)", "country": "ES", "year": 2026, "regime": "autonomo", "income": 60000, "expenses": 15000, "new_autonomo": true},
+ {"name": "ES SL 45k", "country": "ES", "year": 2026, "regime": "sl", "profit": 45000},
+ {"name": "UAE small business", "country": "AE", "year": 2026, "regime": "business", "revenue": 900000, "profit": 400000},
+ {"name": "UAE above relief", "country": "AE", "year": 2026, "regime": "business", "revenue": 4000000, "profit": 1000000}
+]}

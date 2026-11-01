@@ -26,8 +26,7 @@ the tech, sell, launch, and keep everything current.
 
 ## Install (Claude Code)
 
-You need read access to this private repository (ask the owner to add you as a
-collaborator) and Git signed in to GitHub on your machine.
+Needs Claude Code, `git`, Python 3, and Node (only for `render_fetch.js`).
 
 ```
 /plugin marketplace add lalofonseca100/tcc-founder-skills-board-room
@@ -37,14 +36,29 @@ collaborator) and Git signed in to GitHub on your machine.
 Skills then show up as `founder-skills:founder-cfo` and so on. Type
 `/founder-skills:founder-board` or just ask ("test my business idea").
 
-## Get updates
+## Automatic updates (recommended)
 
-```
-/plugin marketplace update tcc-founder-skills
+A new version is published once a month. To receive it without doing anything,
+turn on auto-update for this marketplace, in either way:
+
+- In Claude Code: `/plugin` → **Marketplaces** → `tcc-founder-skills` →
+  **Enable auto-update**.
+- Or add this to `~/.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "tcc-founder-skills": {
+      "source": { "source": "github", "repo": "lalofonseca100/tcc-founder-skills-board-room" },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": { "founder-skills@tcc-founder-skills": true }
+}
 ```
 
-Every release raises the version in `plugins/founder-skills/.claude-plugin/plugin.json`
-and is described in `CHANGELOG.md`.
+Claude Code checks for updates when it starts. To update by hand:
+`/plugin marketplace update tcc-founder-skills`. What changed is in `CHANGELOG.md`.
 
 ## Tools
 

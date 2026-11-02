@@ -1,0 +1,149 @@
+{
+ "_note": "Every rule has a source id (see sources.md) and a status: law, official, proposal, unverified. Duty and VAT rates are NOT stored here: take them per HS code from the official tariff (EU TARIC, MX TIGIE/SNICE, UAE GCC tariff) for each case.",
+ "driving": {
+  "EU": {
+   "status": "law",
+   "source": "EU-561-2006",
+   "max_drive_before_break_h": 4.5,
+   "break_h": 0.75,
+   "max_daily_drive_h": 9,
+   "extended_daily_drive_h": 10,
+   "extended_days_per_week": 2,
+   "daily_rest_h": 11,
+   "weekly_drive_h": 56,
+   "fortnight_drive_h": 90
+  },
+  "MX": {
+   "status": "official",
+   "source": "NOM-087-2017",
+   "max_drive_before_break_h": 5,
+   "break_h": 0.5,
+   "max_daily_drive_h": 14,
+   "daily_rest_h": 8,
+   "_text": "Numerals 4.1 (30 min pause after up to 5 h continuous driving, or spread over 5.5 h), 4.2 (pauses not cumulative), 4.3 (Bitácora de Horas de Servicio, paper or electronic, carried at all times), 4.6 (cargo: routes up to 14 h driving need >= 8 h continuous rest), 4.7 (max 14 h driving in 24 h). Read verbatim from the SCT copy of the DOF text on 2026-11-01.",
+   "_check": "Watch whether the NOM-087-SICT-2-2024 project replaces it."
+  }
+ },
+ "incoterms_2020": {
+  "_source": "ICC-INCOTERMS-2020",
+  "_order": [
+   "export_clearance",
+   "main_carriage",
+   "insurance",
+   "import_clearance",
+   "import_duty_vat",
+   "delivery_to_door"
+  ],
+  "EXW": {
+   "seller_pays": [],
+   "risk_passes": "at seller's premises",
+   "any_mode": true
+  },
+  "FCA": {
+   "seller_pays": [
+    "export_clearance"
+   ],
+   "risk_passes": "handed to buyer's carrier",
+   "any_mode": true
+  },
+  "CPT": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage"
+   ],
+   "risk_passes": "handed to first carrier",
+   "any_mode": true
+  },
+  "CIP": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage",
+    "insurance"
+   ],
+   "risk_passes": "handed to first carrier (insurance: all risks, ICC A)",
+   "any_mode": true
+  },
+  "DAP": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage",
+    "delivery_to_door"
+   ],
+   "risk_passes": "at named place, ready for unloading",
+   "any_mode": true
+  },
+  "DPU": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage",
+    "delivery_to_door"
+   ],
+   "risk_passes": "at named place, unloaded",
+   "any_mode": true
+  },
+  "DDP": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage",
+    "delivery_to_door",
+    "import_clearance",
+    "import_duty_vat"
+   ],
+   "risk_passes": "at named place, cleared for import",
+   "any_mode": true
+  },
+  "FAS": {
+   "seller_pays": [
+    "export_clearance"
+   ],
+   "risk_passes": "alongside ship at port of shipment",
+   "any_mode": false
+  },
+  "FOB": {
+   "seller_pays": [
+    "export_clearance"
+   ],
+   "risk_passes": "on board vessel at port of shipment",
+   "any_mode": false
+  },
+  "CFR": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage"
+   ],
+   "risk_passes": "on board vessel at port of shipment",
+   "any_mode": false
+  },
+  "CIF": {
+   "seller_pays": [
+    "export_clearance",
+    "main_carriage",
+    "insurance"
+   ],
+   "risk_passes": "on board vessel at port of shipment (insurance: minimum, ICC C)",
+   "any_mode": false
+  }
+ },
+ "customs_value_basis": {
+  "EU": {
+   "basis": "CIF to EU border",
+   "status": "law",
+   "source": "EU-UCC"
+  },
+  "MX": {
+   "basis": "CIF (valor en aduana incl. freight and insurance to the Mexican border)",
+   "status": "law",
+   "source": "MX-LA-64"
+  },
+  "AE": {
+   "basis": "CIF",
+   "status": "official",
+   "source": "GCC-CUSTOMS"
+  },
+  "ES": {
+   "basis": "CIF to EU border (EU rules; Spanish customs = AEAT Aduanas)",
+   "status": "law",
+   "source": "EU-UCC"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {"name": "Stage lights from China to Rotterdam, FOB Shenzhen", "type": "landed_cost", "goods_value": 8000, "currency": "EUR",
+     "incoterm": "FOB", "dest": "EU", "freight": 1200, "insurance": 60, "duty_rate": 0.027, "duty_source": "EXAMPLE: check EU-TARIC for the CN code",
+     "vat_rate": 0.21, "vat_source": "EXAMPLE: NL BTW 21%", "other_import_fees": 0, "broker_fee": 150, "inland_delivery": 250, "units": 40, "vat_recoverable": true},
+    {"name": "Same goods, DDP Amsterdam", "type": "landed_cost", "goods_value": 10200, "currency": "EUR", "incoterm": "DDP", "dest": "EU",
+     "freight": 1200, "insurance": 60, "duty_rate": 0.027, "duty_source": "EXAMPLE", "vat_rate": 0.21, "vat_source": "EXAMPLE", "units": 40},
+    {"name": "Truck rental suppliers", "type": "scorecard",
+     "criteria": {"price": 0.30, "quality": 0.20, "reliability": 0.25, "lead_time": 0.10, "risk": 0.15},
+     "suppliers": [
+       {"name": "Supplier A", "scores": {"price": 4, "quality": 3, "reliability": 4, "lead_time": 5, "risk": 3}},
+       {"name": "Supplier B", "scores": {"price": 3, "quality": 5, "reliability": 4, "lead_time": 3, "risk": 4}},
+       {"name": "Supplier C", "scores": {"price": 5, "quality": 2, "reliability": 2, "lead_time": 4, "risk": 2}}]},
+    {"name": "Merch t-shirts stock", "type": "inventory", "annual_demand": 3000, "order_cost": 80, "unit_cost": 6, "holding_rate": 0.25,
+     "lead_time_days": 21, "daily_demand_sd": 4, "service_level": 0.95},
+    {"name": "Rotterdam to Berlin, 12 t truck", "type": "route", "region": "EU",
+     "legs": [{"name": "Rotterdam-Oberhausen", "km": 190, "avg_kmh": 70, "tolls": 0}, {"name": "Oberhausen-Berlin", "km": 520, "avg_kmh": 75, "tolls": 95}],
+     "fuel_l_per_100km": 24, "fuel_price": 1.75, "driver_cost_per_h": 38, "other_per_km": 0.35},
+    {"name": "Monterrey to CDMX, tractocamión", "type": "route", "region": "MX",
+     "legs": [{"name": "Monterrey-San Luis Potosí", "km": 510, "avg_kmh": 70, "tolls": 2100}, {"name": "SLP-CDMX", "km": 410, "avg_kmh": 65, "tolls": 1600}],
+     "fuel_l_per_100km": 38, "fuel_price": 26.5, "driver_cost_per_h": 120, "other_per_km": 6}
+  ]
+}

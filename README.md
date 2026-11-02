@@ -1,6 +1,6 @@
 # Founder skills (Board Room)
 
-A Claude Code plugin with 17 skills that work as a founder's board and team:
+A Claude Code plugin with 19 skills that work as a founder's board and team:
 test an idea, size the market, price it, plan the money and the taxes, choose
 the tech, sell, launch, and keep everything current.
 
@@ -16,9 +16,11 @@ the tech, sell, launch, and keep everything current.
 | founder-marketing | positioning, channels, 30-day campaign, max cost per customer |
 | founder-sales | B2B ideal client, target list, outreach drafts, pipeline in a CRM |
 | founder-ops | suppliers, staffing, routines, permits, risk register |
+| founder-supply | procurement, suppliers, landed cost, Incoterms, customs, routes, warehousing |
 | founder-launch | a cheap real test first, countdown, launch day, first 30 days |
 | founder-cfo | unit economics and a multi-year, multi-product money plan (EUR, VAT, cash) |
 | founder-tax | tax for the Netherlands, Mexico, Spain and the UAE, every rate sourced and dated |
+| founder-legal | reads, drafts and benchmarks contracts (international, EU, NL, Spain, Mexico, US/Texas), risk score, win-win terms, lawyer gates |
 | founder-cto | AI and tech decisions, implementation plans, relentless but polite web research |
 | founder-plan | compiles everything into one business plan with a computed verdict |
 | founder-learning | weekly check of each skill's watchlist; logs changes for approval |

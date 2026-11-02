@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 (2026-11-02)
+
+New: `founder-engineering` (reviews and measures the code your development team builds: bugs, code security, tech debt, DORA, estimates) and `founder-cio` (internal systems: inventory and cost, access, cybersecurity basics, GDPR records, tool ROI). Updated: `founder-cto` (CTO office boundaries, no overlap), starter watchlists, README skill list.
+
 ## 1.3.0 (2026-11-02)
 
 Updated: `skills/founder-chief-of-staff`, `templates/learning`.

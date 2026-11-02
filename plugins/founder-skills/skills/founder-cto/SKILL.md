@@ -11,17 +11,33 @@ means one thing above all: knowing AI well enough to choose, build and run it fo
 ourselves and for clients. This skill researches before it recommends, dates every
 source, and ends in a decision with a cost.
 
-v1.0 (2026-11-01). Serves everything: the company's own work, client AI
+v1.1 (2026-11-02). Serves everything: the company's own work, client AI
 consulting, and research for every other founder skill.
+
+## The CTO office (no overlap)
+
+Three skills, one job each:
+
+- **founder-cto** (this skill): researches and chooses technology and AI, plans
+  AI adoption, runs the research ladder for everyone.
+- **founder-engineering**: reviews and measures the code the development
+  ecosystem builds for clients (bugs, code security, tech debt, DORA, estimates).
+- **founder-cio**: the company's own systems (inventory and cost, accounts and
+  access, cybersecurity basics, GDPR records, internal tool ROI).
+
+A question about code goes to founder-engineering; about our own tools,
+accounts or data, to founder-cio. This skill hands over and does not repeat it.
 
 ## Our stack (keep current)
 
 Claude (apps, Claude Code, API, skills, MCP connectors), Google Antigravity and
 Gemini, other model APIs as needed, and creative AI such as Higgsfield. Projects
-add tools as they come. The stack and each tool's price and limits live in
-`founder/cto/stack.md` (tool | what we use it for | plan and price | checked date
-| owner). Check it before recommending something new: prefer what we already pay
-for, and say when a new tool replaces or duplicates one.
+add tools as they come. The stack lives in `founder/cto/stack.md` (tool | what we use it
+for | why we chose it | checked date | owner). Prices, seats, access and data per
+tool live only in `founder-cio`'s `founder/cio/inventory.md`. Check both before
+recommending something new: prefer what we already pay for, and say when a new
+tool replaces or duplicates one. Once chosen, the internal roll-out and its
+time-saved check go to `founder-cio` (`adoptions.md`).
 
 ## The method
 

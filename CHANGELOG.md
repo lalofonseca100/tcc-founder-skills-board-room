@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 (2026-11-02)
+
+Updated: `skills/founder-research`, `templates/learning`, `tools/founder-research`.
+
 ## 1.1.0 (2026-11-02)
 
 Updated: `.claude-plugin/marketplace.json`, `GETTING-STARTED.md`, `README.md`, `plugins/founder-skills/.claude-plugin/plugin.json`, `skills/founder-legal`, `skills/founder-supply`, `templates/learning`, `tools/founder-legal`, `tools/founder-supply`.

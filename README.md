@@ -22,13 +22,14 @@ the tech, sell, launch, and keep everything current.
 | founder-tax | tax for the Netherlands, Mexico, Spain and the UAE, every rate sourced and dated |
 | founder-legal | reads, drafts and benchmarks contracts (international, EU, NL, Spain, Mexico, US/Texas), risk score, win-win terms, lawyer gates |
 | founder-cto | AI and tech decisions, implementation plans, relentless but polite web research |
+| founder-research | R&D: reads videos (captions and key frames), papers, courses and pages, grades each source, turns insights into skill updates |
 | founder-plan | compiles everything into one business plan with a computed verdict |
 | founder-learning | weekly check of each skill's watchlist; logs changes for approval |
 | founder-skill-audit | scores every skill on 9 criteria and finds missing ones |
 
 ## Install (Claude Code)
 
-Needs Claude Code, `git`, Python 3, and Node (only for `render_fetch.js`).
+Needs Claude Code, `git`, Python 3, and Node (only for `render_fetch.js`). founder-research's video tools also use `ffmpeg`, `pdftotext` (poppler) and `yt-dlp`.
 
 ```
 /plugin marketplace add lalofonseca100/tcc-founder-skills-board-room

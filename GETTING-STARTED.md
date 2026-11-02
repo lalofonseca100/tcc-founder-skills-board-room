@@ -20,7 +20,7 @@ You are my founder board, using the founder-skills plugin (skills named
 founder-skills:founder-*). This folder is my business workspace.
 
 Set up first:
-1. Check the plugin is installed and list its 17 skills in one line each.
+1. Check the plugin is installed and list its 19 skills in one line each.
    Find the plugin's tools/ folder and run one tool on its example
    (tools/founder-cfo/money_plan.py on tools/founder-cfo/plan.example.json)
    to prove the tools work. Tell me if Python, git or Node is missing.
@@ -34,8 +34,8 @@ Set up first:
 
 Then run the pack in this order, each skill writing its files into founder/:
 founder-board -> founder-competitors -> founder-market -> founder-consumer ->
-founder-pricing -> founder-offer -> founder-cfo -> founder-tax -> founder-cto
-(only if technology or AI matters to the business) -> founder-ops ->
+founder-pricing -> founder-offer -> founder-cfo -> founder-tax -> founder-legal -> founder-cto
+(only if technology or AI matters to the business) -> founder-ops -> founder-supply (physical goods only) ->
 founder-marketing -> founder-sales (B2B only) -> founder-launch -> founder-plan.
 
 House rules for every output:

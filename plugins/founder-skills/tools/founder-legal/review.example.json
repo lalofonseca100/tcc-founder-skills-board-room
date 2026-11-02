@@ -1,0 +1,18 @@
+{
+  "contract": "Example: client booking terms for an art installation at a festival (illustrative)",
+  "law": "nl",
+  "clauses": [
+    {"clause": "Limitation of liability", "likelihood": 2, "impact": 5, "balance": -2,
+     "fix": "Cap at the fee of the job; exclude indirect loss both ways; keep gross negligence uncapped",
+     "source": "BW art. 6:233 (NL), checked 2026-11-01"},
+    {"clause": "Payment terms (60 days)", "likelihood": 4, "impact": 3, "balance": -1,
+     "fix": "50% deposit on signing, rest 14 days after the event; statutory commercial interest after that",
+     "source": "Directive 2011/7/EU; BW art. 6:119a"},
+    {"clause": "Cancellation by client", "likelihood": 3, "impact": 4, "balance": 0,
+     "fix": "Sliding scale: 25% >90 days, 50% 30-90 days, 100% <30 days",
+     "source": "clauses.md C-07"},
+    {"clause": "Introduction fee (12 months)", "likelihood": 2, "impact": 3, "balance": 1,
+     "fix": "Keep: 15% of fees if the client books our artist directly within 12 months",
+     "source": "clauses.md C-14"}
+  ]
+}

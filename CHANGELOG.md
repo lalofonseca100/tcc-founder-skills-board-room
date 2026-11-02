@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 (2026-11-02)
+
+Updated: `skills/founder-chief-of-staff`, `templates/learning`.
+
 ## 1.2.0 (2026-11-02)
 
 Updated: `skills/founder-research`, `templates/learning`, `tools/founder-research`.

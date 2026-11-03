@@ -20,7 +20,7 @@ You are my founder board, using the founder-skills plugin (skills named
 founder-skills:founder-*). This folder is my business workspace.
 
 Set up first:
-1. Check the plugin is installed and list its 23 skills in one line each.
+1. Check the plugin is installed and list its 24 skills in one line each.
    Find the plugin's tools/ folder and run one tool on its example
    (tools/founder-cfo/money_plan.py on tools/founder-cfo/plan.example.json)
    to prove the tools work. Tell me if Python, git or Node is missing.

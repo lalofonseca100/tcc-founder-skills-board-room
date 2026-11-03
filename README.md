@@ -1,6 +1,6 @@
 # Founder skills (Board Room)
 
-A Claude Code plugin with 23 skills that work as a founder's board and team:
+A Claude Code plugin with 24 skills that work as a founder's board and team:
 test an idea, size the market, price it, plan the money and the taxes, choose
 the tech, sell, launch, and keep everything current.
 
@@ -24,6 +24,7 @@ the tech, sell, launch, and keep everything current.
 | founder-cto | AI and tech decisions, implementation plans, relentless but polite web research |
 | founder-engineering | CTO office, external: reviews the code your dev team or agents build (bugs, code security, tech debt, DORA delivery metrics, estimates), read and comment only |
 | founder-cio | CTO office, internal: one inventory of tools and costs, accounts and access, cybersecurity basics (CIS IG1, NIST CSF 2.0), GDPR records, tool ROI |
+| founder-human-development | Human Development office: a direct, Socratic coach for the founder's growth and for leading teams and clients the Conscious Business way (Kofman, Carnegie, Ferriss, NVC); coaching, not therapy, with privacy and crisis limits |
 | founder-research | R&D: reads videos (captions and key frames), papers, courses and pages, grades each source, turns insights into skill updates |
 | founder-chief-of-staff | connects all skills: routes findings, decision log, idea parking lot, one weekly brief |
 | founder-plan | compiles everything into one business plan with a computed verdict |

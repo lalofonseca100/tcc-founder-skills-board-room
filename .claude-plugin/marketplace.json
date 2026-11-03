@@ -10,8 +10,8 @@
     {
       "name": "founder-skills",
       "source": "./plugins/founder-skills",
-      "description": "23 founder skills plus their Python and Node tools.",
-      "version": "1.4.0"
+      "description": "24 founder skills plus their Python and Node tools.",
+      "version": "1.5.0"
     }
   ]
 }

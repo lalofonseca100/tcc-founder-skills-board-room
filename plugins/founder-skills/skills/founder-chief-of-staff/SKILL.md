@@ -40,6 +40,8 @@ All in `founder/cos/`:
 - `map.md`: the company map. Table of projects (name | goal | stage | priority
   1-3 | owner | key files | next milestone) and table of skills (skill | reads |
   writes | feeds which skill). Refresh when a project or skill is added.
+- `usage.md`: dated token-spend entries from Mode 7 (top sessions, scheduled
+  runs, totals).
 - `inbox.md`: the handoff inbox, the one way skills talk to each other (format
   below). Newest first; entries move to `inbox-archive-YYYY-MM.md` when closed.
 - `decisions.md`: the decision log (format below).
@@ -113,7 +115,8 @@ task app), ideas parked, open questions.
 
 ### 4. Connect the dots (weekly, or `connect the dots`)
 
-Read what changed since the last brief: `inbox.md`, `decisions.md`, newest files
+Read only what changed since the last brief (by modified date; never re-read
+unchanged files): `inbox.md`, `decisions.md`, newest files
 the skills wrote in `founder/` (by modified date), the `founder-learning`
 changelog and the latest `founder-research` digest. Look for:
 
@@ -127,6 +130,8 @@ changelog and the latest `founder-research` digest. Look for:
 4. **Stale items**: open handoffs older than 14 days, decisions past their
    revisit date, ideas past their revisit date, tasks overdue.
 5. **Compass check**: decisions or plans that clash with `principles.md`.
+6. **Waste**: work done twice, recurring runs that found nothing, threads that
+   grew past ~200k tokens, full reports where a lite answer would have done.
 
 Each dot needs evidence from two files; otherwise label it a hunch.
 
@@ -147,17 +152,44 @@ Write `brief-YYYY-MM-DD.md`, then one short message in the founder's language:
 4. **Commitments** (overdue, due this week)
 5. **R&D** (top 1-3 insights)
 6. **Parked ideas due** to revisit
+7. **Consumo** (one line): the most expensive work of the week, number of
+   scheduled runs, change against last week, and any usage-limit warning
+   (details in `usage.md`, see Mode 7)
 
 Under 300 words in the message; details stay in the file. Numbered questions
 when there are several; a decision card for one big choice.
 
 ### 6. Monthly and quarterly
 
+- Monthly: run Mode 7 (efficiency check).
 - Monthly: short review per project (goal, progress, blockers, cash signal from
   the CFO's files), refresh `map.md`, archive closed handoffs.
 - Quarterly: help the founder set 3-7 priorities per quarter and check last
   quarter's (the Rocks idea from Gino Wickman's *Traction*, EOS). Propose
   principles from repeated patterns in decisions and ideas.
+
+### 7. Efficiency check (`how much are we spending`, `¿cuánto estamos gastando?`, monthly)
+
+The CoS is the pack's token steward. It does not do the saving itself; it
+measures, flags and proposes.
+
+1. **Measure.** If the platform shows usage per session (for example
+   `get_session` usage and cost fields), list the week's sessions by cost;
+   otherwise estimate from thread length and number of runs, and say it is an
+   estimate. Write a dated entry in `usage.md`: top 5 sessions, scheduled runs,
+   total, change against the last entry.
+2. **Check the rules** in each skill's *Token budget* section: scheduled runs
+   that found nothing for two weeks (propose pausing or moving to on-demand),
+   threads past ~200k tokens (propose a handoff), full reports where lite would
+   do, mechanical work on the strongest model.
+3. **Monthly skill size check.** Any SKILL.md over 12 KB gets a trim proposal
+   (keep the core steps, move detail to a `reference.md` in the skill's folder),
+   routed through `founder-learning` for the founder's approval.
+4. **Report** in the weekly brief's *Consumo* line; anything that needs a
+   decision goes to *Needs you*.
+
+The check itself must stay cheap: one line a week and one short review a month,
+never a daily run.
 
 ## Tasks and calendar
 
@@ -208,3 +240,26 @@ editing a skill directly (use `propose_skills`).
   website, "Team of Teams" pages).
 - Gino Wickman, *Traction* (EOS): Rocks, Issues List.
 - Ray Dalio, *Principles*, 2017 (written principles for consistent decisions).
+
+## Token budget (always)
+
+Tokens are the pack's running cost. Every skill follows these rules unless the
+founder asks for more:
+
+- **Start lite.** Give the smallest output that settles the question (a verdict,
+  a table, one page). Build the full report, deck or Word file only when the
+  founder asks for it, and only for the final version.
+- **Read only what the task needs.** Search before reading, read big files in
+  parts, never re-read a file already in the conversation, skip images unless the
+  picture matters.
+- **Right model for the job.** Mechanical steps (copying data, syncing, checking
+  links, formatting) go to a sub-agent on `haiku`; drafting on `sonnet`; keep the
+  strongest model for judgement and decisions.
+- **Swarms start small.** Panels and boards run their quick size first; say the
+  estimated cost before a full run.
+- **No new recurring task** (scheduled run, sync, watcher) without the founder's
+  OK and a cost-per-week estimate. Prefer on-demand runs.
+- **Short threads.** One task per thread; when a thread grows long (about 200k
+  tokens of context), write a one-page handoff and continue in a fresh thread.
+- **Edit, don't rebuild.** Change a file or page with small edits instead of
+  rewriting and republishing it whole.

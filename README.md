@@ -80,11 +80,24 @@ them as the `tools/` folder of the plugin, or at `$FOUNDER_TOOLS` if you set it.
 Skills read and write a `founder/` folder in your current project
 (`founder/idea.md`, `founder/plan.json`, `founder/learning/`...). Keep one per business.
 
+## Token budget
+
+Every skill ends with the same *Token budget* section, so the pack stays cheap
+to run: lite output first (full report, deck or Word file only on request or for
+the final version), read only what the task needs, mechanical steps on small
+models (`haiku`/`sonnet` sub-agents), small swarms first, no recurring run
+without your OK, short threads with one-page handoffs, small edits instead of
+rebuilds. Long skills keep their core in `SKILL.md` and detail in a
+`reference.md` read only when needed. `founder-chief-of-staff` is the token
+steward: a *Consumo* line in the weekly brief and a monthly efficiency check
+(Mode 7). `founder-skill-audit` scores token efficiency as criterion 10.
+
 ## Keeping current
 
 `founder-learning` re-reads each skill's watchlist (`founder/learning/watchlists/`)
 on its cadence and writes what changed to `founder/learning/changelog-YYYY-MM.md`.
-Nothing changes in a skill without your approval. Schedule it weekly if you can.
+Nothing changes in a skill without your approval. Schedule it every two weeks,
+in the same run as `founder-research`.
 
 ## Limits
 

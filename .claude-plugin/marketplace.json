@@ -11,7 +11,7 @@
       "name": "founder-skills",
       "source": "./plugins/founder-skills",
       "description": "24 founder skills plus their Python and Node tools.",
-      "version": "1.5.0"
+      "version": "1.6.0"
     }
   ]
 }

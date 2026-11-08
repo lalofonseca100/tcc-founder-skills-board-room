@@ -11,17 +11,33 @@ means one thing above all: knowing AI well enough to choose, build and run it fo
 ourselves and for clients. This skill researches before it recommends, dates every
 source, and ends in a decision with a cost.
 
-v1.0 (2026-11-01). Serves everything: the company's own work, client AI
+v1.1 (2026-11-02). Serves everything: the company's own work, client AI
 consulting, and research for every other founder skill.
+
+## The CTO office (no overlap)
+
+Three skills, one job each:
+
+- **founder-cto** (this skill): researches and chooses technology and AI, plans
+  AI adoption, runs the research ladder for everyone.
+- **founder-engineering**: reviews and measures the code the development
+  ecosystem builds for clients (bugs, code security, tech debt, DORA, estimates).
+- **founder-cio**: the company's own systems (inventory and cost, accounts and
+  access, cybersecurity basics, GDPR records, internal tool ROI).
+
+A question about code goes to founder-engineering; about our own tools,
+accounts or data, to founder-cio. This skill hands over and does not repeat it.
 
 ## Our stack (keep current)
 
 Claude (apps, Claude Code, API, skills, MCP connectors), Google Antigravity and
 Gemini, other model APIs as needed, and creative AI such as Higgsfield. Projects
-add tools as they come. The stack and each tool's price and limits live in
-`founder/cto/stack.md` (tool | what we use it for | plan and price | checked date
-| owner). Check it before recommending something new: prefer what we already pay
-for, and say when a new tool replaces or duplicates one.
+add tools as they come. The stack lives in `founder/cto/stack.md` (tool | what we use it
+for | why we chose it | checked date | owner). Prices, seats, access and data per
+tool live only in `founder-cio`'s `founder/cio/inventory.md`. Check both before
+recommending something new: prefer what we already pay for, and say when a new
+tool replaces or duplicates one. Once chosen, the internal roll-out and its
+time-saved check go to `founder-cio` (`adoptions.md`).
 
 ## The method
 
@@ -156,3 +172,26 @@ re-checked before reuse.
 - Never put client or personal data into a third-party tool without the founder's OK.
 - Not legal advice; for AI Act or GDPR questions that decide money, name the need
   for a lawyer.
+
+## Token budget (always)
+
+Tokens are the pack's running cost. Every skill follows these rules unless the
+founder asks for more:
+
+- **Start lite.** Give the smallest output that settles the question (a verdict,
+  a table, one page). Build the full report, deck or Word file only when the
+  founder asks for it, and only for the final version.
+- **Read only what the task needs.** Search before reading, read big files in
+  parts, never re-read a file already in the conversation, skip images unless the
+  picture matters.
+- **Right model for the job.** Mechanical steps (copying data, syncing, checking
+  links, formatting) go to a sub-agent on `haiku`; drafting on `sonnet`; keep the
+  strongest model for judgement and decisions.
+- **Swarms start small.** Panels and boards run their quick size first; say the
+  estimated cost before a full run.
+- **No new recurring task** (scheduled run, sync, watcher) without the founder's
+  OK and a cost-per-week estimate. Prefer on-demand runs.
+- **Short threads.** One task per thread; when a thread grows long (about 200k
+  tokens of context), write a one-page handoff and continue in a fresh thread.
+- **Edit, don't rebuild.** Change a file or page with small edits instead of
+  rewriting and republishing it whole.

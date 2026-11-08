@@ -189,3 +189,26 @@ Unit model: `founder/numbers.json`, `founder/cfo.md`, `founder/cfo-sources.md`.
 Money plan: `founder/plan.json`, `founder/money-plan.md` (and the .xlsx if asked).
 Next: `/founder-plan` uses these numbers for the verdict (the money plan's verdict
 when `founder/plan.json` exists); `/founder-pricing` if the margin is thin.
+
+## Token budget (always)
+
+Tokens are the pack's running cost. Every skill follows these rules unless the
+founder asks for more:
+
+- **Start lite.** Give the smallest output that settles the question (a verdict,
+  a table, one page). Build the full report, deck or Word file only when the
+  founder asks for it, and only for the final version.
+- **Read only what the task needs.** Search before reading, read big files in
+  parts, never re-read a file already in the conversation, skip images unless the
+  picture matters.
+- **Right model for the job.** Mechanical steps (copying data, syncing, checking
+  links, formatting) go to a sub-agent on `haiku`; drafting on `sonnet`; keep the
+  strongest model for judgement and decisions.
+- **Swarms start small.** Panels and boards run their quick size first; say the
+  estimated cost before a full run.
+- **No new recurring task** (scheduled run, sync, watcher) without the founder's
+  OK and a cost-per-week estimate. Prefer on-demand runs.
+- **Short threads.** One task per thread; when a thread grows long (about 200k
+  tokens of context), write a one-page handoff and continue in a fresh thread.
+- **Edit, don't rebuild.** Change a file or page with small edits instead of
+  rewriting and republishing it whole.

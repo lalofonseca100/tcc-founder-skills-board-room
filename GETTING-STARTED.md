@@ -20,7 +20,7 @@ You are my founder board, using the founder-skills plugin (skills named
 founder-skills:founder-*). This folder is my business workspace.
 
 Set up first:
-1. Check the plugin is installed and list its 19 skills in one line each.
+1. Check the plugin is installed and list its 24 skills in one line each.
    Find the plugin's tools/ folder and run one tool on its example
    (tools/founder-cfo/money_plan.py on tools/founder-cfo/plan.example.json)
    to prove the tools work. Tell me if Python, git or Node is missing.
@@ -32,7 +32,8 @@ Set up first:
    my costs, my time and money available, my tax residence and legal form, my
    tools and tech stack, and what decision I need to make first.
 
-Then run the pack in this order, each skill writing its files into founder/:
+Then run the pack in this order, each skill writing its files into founder/
+(lite output: one page per skill; I will ask for the full report when I need it):
 founder-board -> founder-competitors -> founder-market -> founder-consumer ->
 founder-pricing -> founder-offer -> founder-cfo -> founder-tax -> founder-legal -> founder-cto
 (only if technology or AI matters to the business) -> founder-ops -> founder-supply (physical goods only) ->
@@ -47,10 +48,13 @@ House rules for every output:
 - When something is unclear or contradictory, ask me numbered questions
   instead of guessing; keep working on clearly marked estimates meanwhile.
 - Not legal, tax or financial advice: say when I need a professional.
+- Follow each skill's Token budget: lite first, small models for mechanical
+  steps, quick panels first, tell me the cost before anything big.
 
 At the end, give me the business plan verdict (Profitable, Not yet or
 Incomplete), the three biggest risks, and the next three actions with dates.
-Finally, offer to schedule founder-learning weekly so the skills stay current,
+Finally, offer to schedule founder-learning and founder-research together every
+two weeks so the skills stay current,
 and founder-skill-audit after the first full run.
 ```
 

@@ -1,5 +1,5 @@
 # Watchlist: founder-research
-Cadence: weekly (Monday morning brief). The R&D run has its own Monday 06:43 Amsterdam scheduled task; the learning run only checks the tool lines below.
+Cadence: weekly (Monday morning brief). The R&D run has its own scheduled task; the learning run only checks the tool lines below.
 Each line: what to watch | where | why it matters. Last refreshed: never (created 2026-11-02).
 
 - Active research directions | founder/research/agenda.md | the R&D run itself: new sources per direction

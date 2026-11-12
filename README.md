@@ -1,6 +1,6 @@
 # Founder skills (Board Room)
 
-A Claude Code plugin with 19 skills that work as a founder's board and team:
+A Claude Code plugin with 24 skills that work as a founder's board and team:
 test an idea, size the market, price it, plan the money and the taxes, choose
 the tech, sell, launch, and keep everything current.
 
@@ -22,7 +22,11 @@ the tech, sell, launch, and keep everything current.
 | founder-tax | tax for the Netherlands, Mexico, Spain and the UAE, every rate sourced and dated |
 | founder-legal | reads, drafts and benchmarks contracts (international, EU, NL, Spain, Mexico, US/Texas), risk score, win-win terms, lawyer gates |
 | founder-cto | AI and tech decisions, implementation plans, relentless but polite web research |
+| founder-engineering | CTO office, external: reviews the code your dev team or agents build (bugs, code security, tech debt, DORA delivery metrics, estimates), read and comment only |
+| founder-cio | CTO office, internal: one inventory of tools and costs, accounts and access, cybersecurity basics (CIS IG1, NIST CSF 2.0), GDPR records, tool ROI |
+| founder-human-development | Human Development office: a direct, Socratic coach for the founder's growth and for leading teams and clients the Conscious Business way (Kofman, Carnegie, Ferriss, NVC); coaching, not therapy, with privacy and crisis limits |
 | founder-research | R&D: reads videos (captions and key frames), papers, courses and pages, grades each source, turns insights into skill updates |
+| founder-chief-of-staff | connects all skills: routes findings, decision log, idea parking lot, one weekly brief |
 | founder-plan | compiles everything into one business plan with a computed verdict |
 | founder-learning | weekly check of each skill's watchlist; logs changes for approval |
 | founder-skill-audit | scores every skill on 9 criteria and finds missing ones |
@@ -76,11 +80,24 @@ them as the `tools/` folder of the plugin, or at `$FOUNDER_TOOLS` if you set it.
 Skills read and write a `founder/` folder in your current project
 (`founder/idea.md`, `founder/plan.json`, `founder/learning/`...). Keep one per business.
 
+## Token budget
+
+Every skill ends with the same *Token budget* section, so the pack stays cheap
+to run: lite output first (full report, deck or Word file only on request or for
+the final version), read only what the task needs, mechanical steps on small
+models (`haiku`/`sonnet` sub-agents), small swarms first, no recurring run
+without your OK, short threads with one-page handoffs, small edits instead of
+rebuilds. Long skills keep their core in `SKILL.md` and detail in a
+`reference.md` read only when needed. `founder-chief-of-staff` is the token
+steward: a *Consumo* line in the weekly brief and a monthly efficiency check
+(Mode 7). `founder-skill-audit` scores token efficiency as criterion 10.
+
 ## Keeping current
 
 `founder-learning` re-reads each skill's watchlist (`founder/learning/watchlists/`)
 on its cadence and writes what changed to `founder/learning/changelog-YYYY-MM.md`.
-Nothing changes in a skill without your approval. Schedule it weekly if you can.
+Nothing changes in a skill without your approval. Schedule it every two weeks,
+in the same run as `founder-research`.
 
 ## Limits
 

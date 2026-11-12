@@ -10,6 +10,13 @@ pack's memory for the outside world. It checks what each skill depends on, write
 down what changed with a source and a date, and proposes updates. It never changes
 a skill on its own: The founder approves every change.
 
+## Schedule
+
+The learning run and the R&D run (`founder-research`) are one combined
+scheduled run every two weeks (1st and 15th of the month). Do learning first,
+then R&D, then leave one CoS inbox entry for both. Use small models for the
+mechanical checks (see Token budget).
+
 ## Files
 
 All in `founder/learning/`:
@@ -92,3 +99,26 @@ also need the founder's OK.
 - Report "could not check" honestly; never fill gaps with memory.
 - Do only what the watchlists and the founder ask; do not rewrite reports or skills unasked.
 - Plain Spanish in the message, English in the files. Not legal or tax advice.
+
+## Token budget (always)
+
+Tokens are the pack's running cost. Every skill follows these rules unless the
+founder asks for more:
+
+- **Start lite.** Give the smallest output that settles the question (a verdict,
+  a table, one page). Build the full report, deck or Word file only when the
+  founder asks for it, and only for the final version.
+- **Read only what the task needs.** Search before reading, read big files in
+  parts, never re-read a file already in the conversation, skip images unless the
+  picture matters.
+- **Right model for the job.** Mechanical steps (copying data, syncing, checking
+  links, formatting) go to a sub-agent on `haiku`; drafting on `sonnet`; keep the
+  strongest model for judgement and decisions.
+- **Swarms start small.** Panels and boards run their quick size first; say the
+  estimated cost before a full run.
+- **No new recurring task** (scheduled run, sync, watcher) without the founder's
+  OK and a cost-per-week estimate. Prefer on-demand runs.
+- **Short threads.** One task per thread; when a thread grows long (about 200k
+  tokens of context), write a one-page handoff and continue in a fresh thread.
+- **Edit, don't rebuild.** Change a file or page with small edits instead of
+  rewriting and republishing it whole.

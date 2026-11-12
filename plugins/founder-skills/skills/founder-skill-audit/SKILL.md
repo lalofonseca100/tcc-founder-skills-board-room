@@ -34,7 +34,7 @@ it ("according to `founder/v2/money.md` ...").
 
 ## Step 1: score every skill
 
-Nine criteria, each scored 0 to 3 (0 = missing, 1 = weak, 2 = adequate,
+Ten criteria, each scored 0 to 3 (0 = missing, 1 = weak, 2 = adequate,
 3 = strong). Give one sentence of evidence per score, with a file path or line.
 
 | # | criterion | the question | a 3 looks like |
@@ -48,10 +48,11 @@ Nine criteria, each scored 0 to 3 (0 = missing, 1 = weak, 2 = adequate,
 | 7 | Decision value | Does it end in a clear decision, a number and a next step, in the founder's format? | Verdict + next action; usable in the docx/deck without rewriting |
 | 8 | Proven in use | Did it hold up on real projects? | Used as-is; no rework; the founder kept the result |
 | 9 | Freshness | Are its sources dated and checked on time? | Has a watchlist in `founder/learning/watchlists/`; checked within its cadence in `last-run.md`; no `unverified` value used as fact; approved changes applied |
+| 10 | Token efficiency | Does it get the result with the least reading, rebuilding and model power? | Lite output by default; reads only what it needs; mechanical steps on small models; SKILL.md under 12 KB with detail in reference files; no recurring run without approval |
 
-**Strength** = the total out of 27: **Strong** 23+, **Solid** 18-22, **Weak**
-14-17, **Rebuild** 13 or less. (Audits before 2026-11 used 8 criteria out of 24;
-to compare, look at criteria 1-8.)
+**Strength** = the total out of 30: **Strong** 25+, **Solid** 20-24, **Weak**
+15-19, **Rebuild** 14 or less. (Audits before 2026-11 used 8 criteria out of 24,
+and before 2026-11-08 9 out of 27; to compare, look at criteria 1-8.)
 
 **Validity flag**: a 0 on criterion 1 or 2 makes the skill "not valid until fixed"
 whatever its total, because its conclusions cannot be trusted.
@@ -137,3 +138,26 @@ After every full pack run on a new project, when a new project type joins the
 portfolio, after a `founder-learning` run that changed a method, or when the founder asks.
 For criterion 9, read `founder/learning/last-run.md` and the latest
 `changelog-*.md`; a skill with no watchlist scores 0 on freshness. Compare with the last audit in `founder/audit/`.
+
+## Token budget (always)
+
+Tokens are the pack's running cost. Every skill follows these rules unless the
+founder asks for more:
+
+- **Start lite.** Give the smallest output that settles the question (a verdict,
+  a table, one page). Build the full report, deck or Word file only when the
+  founder asks for it, and only for the final version.
+- **Read only what the task needs.** Search before reading, read big files in
+  parts, never re-read a file already in the conversation, skip images unless the
+  picture matters.
+- **Right model for the job.** Mechanical steps (copying data, syncing, checking
+  links, formatting) go to a sub-agent on `haiku`; drafting on `sonnet`; keep the
+  strongest model for judgement and decisions.
+- **Swarms start small.** Panels and boards run their quick size first; say the
+  estimated cost before a full run.
+- **No new recurring task** (scheduled run, sync, watcher) without the founder's
+  OK and a cost-per-week estimate. Prefer on-demand runs.
+- **Short threads.** One task per thread; when a thread grows long (about 200k
+  tokens of context), write a one-page handoff and continue in a fresh thread.
+- **Edit, don't rebuild.** Change a file or page with small edits instead of
+  rewriting and republishing it whole.
